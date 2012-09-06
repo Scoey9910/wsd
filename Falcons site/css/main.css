@@ -1,0 +1,119 @@
+body{
+	background-color: #bfbbbb;
+	}
+h1{
+	color:#fb0303;
+	text-align: left;
+	}
+p{
+	font-family: "times new roman" times;
+	font-size: 20px;
+	text-align: left;
+	color: black;
+	}	
+#sched{
+	font-family: "times new roman" times;
+	font-size: 20px;
+	text-align: left;
+	color: #fb0303;
+	}
+	
+\*-------Nav---------------------------------------------------------------*\
+
+	
+nav{
+	width: 960px;
+	margin: 0 auto;
+	background: red;
+	list-style: none;
+	padding: 15px;
+	overflow: hidden;
+	float: none;
+	
+	
+	}
+#home{	
+	width: 400px;
+	background-color: #bf4747; 
+ 	text-decoration:none;
+	display: inline-block;
+	line-height: 75px;
+	text-align: center;
+	font-size: 50px 
+	}
+#schedule{	
+	width: 400px;
+	background-color: #bf4747; 
+ 	text-decoration: none;
+	display: inline-block;
+	line-height: 75px;
+	text-align: center;
+ 	font-size: 50px
+	}
+#tickets{	
+	width: 400px;
+	background-color: #bf4747; 
+ 	text-decoration: none;
+	display: inline-block;
+	line-height:75px;
+	text-align: center;
+	font-size: 50px
+	 
+	}		
+
+\*-------Photo-Gallery------------------------------------------------------*\
+aside{
+	background-color: #fb0303 
+	}
+
+
+#photo1{
+	border: 10px solid #ff002a;
+	list-style-type: none;
+	width: 200px;
+	margin: 20px auto;
+	overflow: hidden;
+	padding: 5px;		
+ 	float: left;
+	margin left: 10px;
+	
+	}
+#photo2{
+	border: 10px solid #ff002a;
+	list-style-type: none;
+	width: 200px;
+	margin: 20px auto;
+	overflow: hidden;
+	padding: 5px;		
+ 	float: left;
+	margin left: 10px;
+	
+	}
+#photo3{
+	border: 10px solid #ff002a;
+	list-style-type: none;
+	width: 200px;
+	margin: 20px auto;
+	overflow: hidden;
+	padding: 5px;		
+	float: left;
+	margin left: 10px;
+	}
+	
+	
+a:link{color: purple;
+		text-decoration: none;
+		background-color: #bf4747; 
+		}
+a:visited{color: black; 
+		}
+a:hover{color: red; 
+		}
+a:active{color: yellow; 
+}
+		
+	
+
+	
+
+ 	
