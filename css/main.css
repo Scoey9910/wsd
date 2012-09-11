@@ -1,45 +1,53 @@
 body{
 	background-color: #f0efef;
-	width: 100%;
-	margin: 0;
-	padding: 0px 15px 0;
-	
+	max-width: 100%;
+	padding-left: 1.5625%;
+	padding-right: 1.5625%
 	}
+#wrapper{
+	width: 93.75% /*900px/960px*/
+	margin: 1.1111111% auto;
+	overflow: hidden;
+	
+		}
 h2,h3,h4{
 	text-align: left;
-	font-size: .533333333m;
+	font-size: 112.5%;/*18px/16px*/
 	background-color: red;
-	padding: 10px 15px 5px;
-	
+	padding: .555555555% .833333333% .277777777%;/*10px+15px+5px/18px*/
+	width:100%;
 	}
 h1{
 	color:#fb0303;
 	text-align: center;
-	font-size: 1.875m;/*30px/16px*/
+	font-size: 375%;/*60px/16px*/
 	background-color: black;
-	height: 100px;
+	height: 1.666666667em;/*100px/30px*/
 	width: 89.5833334%;
 	margin: 0;
 	float: left;
+ 
 	
 	}
 	
 p{
 	font-family: "times new roman", times, serif;
-	font-size: 1.25m;/*20px/16px*/
+	font-size: 125%;/*20px/16px*/
 	text-align: left;
+	margin: 1.1111111% auto;
 	color: black;
-	padding: 0px 15px 0;
+	padding-left: .750em/*12px/16px*/
 	}	
 #sched{
 	font-family: "times new roman", times, serif;
-	font-size: 30px;
+	font-size: 187.5%;/*30px/16px*/
 	text-align: left;
 	color: #fb0303;
 	}
 logo{
 	width: 10.4166666%;
 	float: left;
+ 
 }	
  	
 
@@ -52,11 +60,10 @@ logo{
 	width: 100%;
 	display: inline-block;
 	text-align: center;
-	margin: 0 auto;
 	background: red;
 	list-style: none;
-	padding: 15px;
-	clear: none;
+	padding: 2% 0% 2% 0%;
+	clear: left;
 	
 	}
 a:link{color: purple;
@@ -71,14 +78,15 @@ a:active{color: yellow;
 	
 	}
 #home,#schedule,#tickets{	
-	width: 300px;
-	border:1px solid black;
+	width: 31.3%;
+	border: 12.5% solid black;/*2px/16px*/
 	background-color: #bf4747; 
  	text-decoration: none;
 	display: inline-block;
-	line-height: 75px;
+	line-height: 75%;
 	text-align: center;
-	font-size: 50px;
+	font-size: 375%;
+	padding: 3% 0% 3% 0%;
 	
 	}
 	
@@ -88,14 +96,13 @@ a:active{color: yellow;
 	background-color: black;
 	 }
 #photo1,#photo2,#photo3{
-	border: 10px solid #ff002a;
+	border: .9375em solid #ff002a;
 	list-style-type: none;
 	display: inline-block;
 	background-color: black;
-	width: 200px;
-	margin: 20px auto;
-	overflow: hidden;
-	padding: 5px;		
+	width: 22.2222222%;
+	margin: 1.250% auto;
+	overflow: hidden;		
  	float: none;
 	
 	}
