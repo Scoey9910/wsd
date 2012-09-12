@@ -87,7 +87,7 @@ a:active{color: yellow;
 	text-align: center;
 	font-size: 375%;
 	padding: 3% 0% 3% 0%;
-	
+	max-width: 100%;
 	}
 	
 /*-------Photo-Gallery------------------------------------------------------*/
@@ -107,11 +107,41 @@ a:active{color: yellow;
 	
 	}
 
-	
+img{
+	max-width: 100%;
+}	
 
 		
-	
+/*---------Media-Queries------------------------------------------------------*/
 
-	
+/* Tablet Portrait size to standard 960 (Devices and browsers)*/
+@media screen and (min-width: 768px) and (max-width: 959px){
+#wrapper{
+	background-color: red;
+}
+}
 
+/* Mobile Landscape size to to Tablet Portrait (Devices and browsers)*/
+@media screen and (min-width: 480px) and (max-width: 767px){
+#wrapper{
+	background-color: yellow;}
+	h1{font-size: 225%;}
+	#links{
+	display: block;
+	font-size: 75%;}
+}
+	
+/* Mobile Portrait size to Mobile Landscape (Devices and browsers)*/
+@media screen and (max-width: 479px){
+#wrapper{background-color: green;}
+h1{font-size: 138%}
+
+logo{width: 10%;}
+
+#photo1,#photo2,#photo3,h4{display: none;}
+
+#links{
+	display: block;
+	font-size: 25%;}
+}
  	
