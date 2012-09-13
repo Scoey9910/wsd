@@ -116,25 +116,59 @@ img{
 
 /* Tablet Portrait size to standard 960 (Devices and browsers)*/
 @media screen and (min-width: 768px) and (max-width: 959px){
-#wrapper{
-	background-color: red;
-}
+#wrapper{ background-color: purple;}
+
+h1{font-size: 345%;}
+
+#links{font-size: 50%}
+
+#game{width: 50%;}
+	
+#news{width: 50%;
+		float: right;}
+
+p{font-size: 100%;}
+
+#sched{font-size: 150%;}
 }
 
 /* Mobile Landscape size to to Tablet Portrait (Devices and browsers)*/
 @media screen and (min-width: 480px) and (max-width: 767px){
-#wrapper{
-	background-color: yellow;}
+	#wrapper{background-color: yellow;}
+	
 	h1{font-size: 225%;}
-	#links{
-	display: block;
-	font-size: 75%;}
-}
+	
+	#pic{clear: both;}
+	
+	#game{width: 50%;}
+	
+	#news{width: 50%;
+		float: right;}
+		
+	#sched{font-size: 120%;}
+	
+	#sch1{width: 50%;
+		float: left;}	
+	
+	#sch2{width: 50%;
+		float: right;}			
+	
+	p{font-size: 85%}
+	
+	#links{font-size: 50%;}
+	
+	
+	
+}	
 	
 /* Mobile Portrait size to Mobile Landscape (Devices and browsers)*/
 @media screen and (max-width: 479px){
 #wrapper{background-color: green;}
 h1{font-size: 138%}
+
+#sched{font-size: 100%}
+
+p{font-size: 75%}
 
 logo{width: 10%;}
 
