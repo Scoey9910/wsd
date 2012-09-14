@@ -5,7 +5,7 @@ body{
 	padding-right: 1.5625%
 	}
 #wrapper{
-	width: 93.75% /*900px/960px*/
+	width: 93.75%; /*900px/960px*/
 	margin: 1.1111111% auto;
 	overflow: hidden;
 	
@@ -16,6 +16,7 @@ h2,h3,h4{
 	background-color: red;
 	padding: .555555555% .833333333% .277777777%;/*10px+15px+5px/18px*/
 	width:100%;
+	clear: right;
 	}
 h1{
 	color:#fb0303;
@@ -44,7 +45,7 @@ p{
 	text-align: left;
 	color: #fb0303;
 	}
-logo{
+#logo{
 	width: 10.4166666%;
 	float: left;
  
@@ -58,12 +59,9 @@ logo{
 		
 #links{
 	width: 100%;
-	display: inline-block;
 	text-align: center;
-	background: red;
 	list-style: none;
 	padding: 2% 0% 2% 0%;
-	clear: left;
 	
 	}
 a:link{color: purple;
@@ -78,18 +76,18 @@ a:active{color: yellow;
 	
 	}
 #home,#schedule,#tickets{	
-	width: 31.3%;
-	border: 12.5% solid black;/*2px/16px*/
-	background-color: #bf4747; 
+	width: 33.3%;
+ 	background-color: #bf4747; 
  	text-decoration: none;
-	display: inline-block;
+ 	float: right;
 	line-height: 75%;
 	text-align: center;
 	font-size: 375%;
 	padding: 3% 0% 3% 0%;
 	max-width: 100%;
+	clear: left;
 	}
-	
+#tickets{}	
 /*-------Photo-Gallery------------------------------------------------------*/
 
 #pic{
@@ -116,33 +114,40 @@ img{
 
 /* Tablet Portrait size to standard 960 (Devices and browsers)*/
 @media screen and (min-width: 768px) and (max-width: 959px){
-#wrapper{ background-color: purple;}
+	 
 
-h1{font-size: 345%;}
+	h1{font-size: 300%;}
 
-#links{font-size: 50%}
-
-#game{width: 50%;}
+	nav{clear: right;
+		font-size: 50%;}
 	
-#news{width: 50%;
+	#game{width: 45%;
+		float: left;}
+
+ 
+	#news{width: 45%;
 		float: right;}
 
-p{font-size: 100%;}
+	p{font-size: 100%;}
 
-#sched{font-size: 150%;}
+	#sched{font-size: 150%;}
+	
+	#pic{clear: both;}
 }
 
 /* Mobile Landscape size to to Tablet Portrait (Devices and browsers)*/
 @media screen and (min-width: 480px) and (max-width: 767px){
-	#wrapper{background-color: yellow;}
+	 
 	
 	h1{font-size: 225%;}
 	
 	#pic{clear: both;}
 	
-	#game{width: 50%;}
-	
-	#news{width: 50%;
+	#game{width: 45%;
+		float: left;}
+
+ 
+	#news{width: 45%;
 		float: right;}
 		
 	#sched{font-size: 120%;}
@@ -155,7 +160,8 @@ p{font-size: 100%;}
 	
 	p{font-size: 85%}
 	
-	#links{font-size: 50%;}
+	nav{font-size: 50%;
+		float: none;}
 	
 	
 	
@@ -163,19 +169,18 @@ p{font-size: 100%;}
 	
 /* Mobile Portrait size to Mobile Landscape (Devices and browsers)*/
 @media screen and (max-width: 479px){
-#wrapper{background-color: green;}
-h1{font-size: 138%}
+	
+	h1{font-size: 138%}
 
-#sched{font-size: 100%}
+	#sched{font-size: 100%}
 
-p{font-size: 75%}
+	p{font-size: 75%}
 
-logo{width: 10%;}
+	logo{width: 10%;}
 
-#photo1,#photo2,#photo3,h4{display: none;}
+	#photo1,#photo2,#photo3,h4{display: none;}
 
-#links{
-	display: block;
+	nav{
 	font-size: 25%;}
 }
  	
