@@ -4,20 +4,22 @@ body{
 	padding-left: 1.5625%;
 	padding-right: 1.5625%
 	}
+	
 #wrapper{
 	width: 93.75%; /*900px/960px*/
 	margin: 1.1111111% auto;
 	overflow: hidden;
+	}
 	
-		}
 h2,h3,h4{
 	text-align: left;
 	font-size: 112.5%;/*18px/16px*/
-	background-color: red;
+	background-color: rgb(255,0,0);
 	padding: .555555555% .833333333% .277777777%;/*10px+15px+5px/18px*/
 	width:100%;
 	clear: right;
 	}
+	
 h1{
 	color:#fb0303;
 	text-align: center;
@@ -27,9 +29,7 @@ h1{
 	width: 89.5833334%;
 	margin: 0;
 	float: left;
- 
-	
-	}
+ 	}
 	
 p{
 	font-family: "times new roman", times, serif;
@@ -37,19 +37,20 @@ p{
 	text-align: left;
 	margin: 1.1111111% auto;
 	color: black;
-	padding-left: .750em/*12px/16px*/
-	}	
+	padding-left: .750em;/*12px/16px*/
+	}
+		
 #sched{
 	font-family: "times new roman", times, serif;
 	font-size: 187.5%;/*30px/16px*/
 	text-align: left;
 	color: #fb0303;
 	}
+	
 #logo{
 	width: 10.4166666%;
 	float: left;
- 
-}	
+ 	}	
  	
 
 	
@@ -62,19 +63,26 @@ p{
 	text-align: center;
 	list-style: none;
 	padding: 2% 0% 2% 0%;
-	
 	}
-a:link{color: purple;
-		text-decoration: none;
-		background-color: #bf4747; 
-		}
-a:visited{color: black; 
-		}
-a:hover{color: red; 
-		}
-a:active{color: yellow; 	
 	
+a:link{
+	color: purple;
+	text-decoration: none;
+	background-color: #bf4747; 
 	}
+		
+a:visited{
+	color: black; 
+		}
+		
+a:hover{
+	opacity: .4; 
+		}
+		
+a:active{
+	color: yellow; 	
+	}
+	
 #home,#schedule,#tickets{	
 	width: 33.3%;
  	background-color: #bf4747; 
@@ -87,7 +95,72 @@ a:active{color: yellow;
 	max-width: 100%;
 	clear: left;
 	}
-#tickets{}	
+	
+/*-------Schedule-Table-----------------------------------------------------*/
+caption{
+	Font-size: 112.5%;
+	background-color :red;
+		}
+			
+table{
+	width: 42%;
+	Background-color: #818384;
+	Border: 2px black solid;
+	text-decoration: underline;
+	padding: .88888888%;
+	float: left;
+	border-radius: .625em;
+	text-align: left;
+	}
+	
+th{
+	font-weight: bold;
+	text-align: left;
+	}	
+ 
+/*-------Sign-Up-Form-------------------------------------------------------*/
+h5{
+	text-align: center;
+	font-size: 100%;/*18px/16px*/
+	background-color: red;
+	padding: 0;
+	width: 48%;
+	float: left;
+	margin-top: 0px;
+	}
+	
+form{
+	width: 42%;
+	background-color: #818384;
+	margin-right: 11.1111%;
+	float: right;
+	border: 2px solid;
+	border-radius: .625em;
+	padding: .625em;
+	}
+	
+input{
+	margin: .625em auto;
+	border-radius: .3125em;
+	box-shadow: .25em .25em .25em black;
+	}
+	
+label{
+	font-size: 125%;
+	}
+				
+input:focus{ 
+	background: #76bef2;
+	}
+	
+button{
+	box-shadow: .25em .25em .25em black;
+	background-color: green;
+	border-radius: .3125em;
+	padding: .3125em .3125em .3125em .3125em;
+	float: right;
+	}
+	
 /*-------Photo-Gallery------------------------------------------------------*/
 
 #pic{
@@ -101,86 +174,178 @@ a:active{color: yellow;
 	width: 22.2222222%;
 	margin: 1.250% auto;
 	overflow: hidden;		
- 	float: none;
-	
 	}
 
 img{
 	max-width: 100%;
-}	
+	}	
 
 		
 /*---------Media-Queries------------------------------------------------------*/
 
 /* Tablet Portrait size to standard 960 (Devices and browsers)*/
 @media screen and (min-width: 768px) and (max-width: 959px){
-	 
-
-	h1{font-size: 300%;}
-
-	nav{clear: right;
-		font-size: 50%;}
-	
-	#game{width: 45%;
-		float: left;}
-
  
-	#news{width: 45%;
-		float: right;}
 
-	p{font-size: 100%;}
+	h1{
+	font-size: 300%;
+	}
 
-	#sched{font-size: 150%;}
+	nav{
+	clear: right;
+	font-size: 50%;
+	}
 	
-	#pic{clear: both;}
+	#game{
+	width: 45%;
+	float: left;
+	}
+
+ 	#news{
+ 	width: 45%;
+	float: right;
+	}
+
+	p{
+	font-size: 100%;
+	}
+
+	
+	#pic{
+	clear: both;
+	}
+	
+	h5{
+	font-size: 75%;
+	width: 49%;
+	margin: 10px auto;
+	float: left;
+	margin-top: 1px;
+	text-align: center;
+	}	
+	
+	table{
+	width: 40%;
+	font-size: 75%;
+	}
+	
+	form{
+	width: 45%;
+	font-size: 75%;
+	float: right;
+		}
+	
 }
 
 /* Mobile Landscape size to to Tablet Portrait (Devices and browsers)*/
 @media screen and (min-width: 480px) and (max-width: 767px){
-	 
+ 
 	
-	h1{font-size: 225%;}
+	h1{
+	font-size: 225%;
+	}
 	
-	#pic{clear: both;}
+	#pic{
+	clear: both;
+	}
 	
-	#game{width: 45%;
-		float: left;}
+	#game{
+	width: 45%;
+	float: left;
+	}
 
  
-	#news{width: 45%;
-		float: right;}
+	#news{
+	width: 45%;
+	float: right;
+	}
+	
+	
+	#sch1{
+	width: 50%;
+	float: left;
+		}	
+	
+	#sch2{
+	width: 50%;
+	float: right;
+	}			
+	
+	p{
+	font-size: 85%;
+	 }
+	
+	nav{
+	font-size: 50%;
+	float: none;
+	}
 		
-	#sched{font-size: 120%;}
+	h5{
+	font-size: 75%;
+	width: 100%;
+	margin: 10px auto;
+	float: none;
+	}	
+		
+	table{
+	width: 100%;
+	font-size: 75%;
+	}
 	
-	#sch1{width: 50%;
-		float: left;}	
-	
-	#sch2{width: 50%;
-		float: right;}			
-	
-	p{font-size: 85%}
-	
-	nav{font-size: 50%;
-		float: none;}
-	
+	form{
+	width: 96%;
+	font-size: 75%;
+	float: none;
+	clear: left;
+	}
 	
 	
 }	
 	
 /* Mobile Portrait size to Mobile Landscape (Devices and browsers)*/
 @media screen and (max-width: 479px){
+ 
 	
-	h1{font-size: 138%}
+	h1{
+	font-size: 138%
+	}
 
-	#sched{font-size: 100%}
+	#sched{
+	font-size: 100%
+	}
 
-	p{font-size: 75%}
+	p{
+	font-size: 75%;
+	}
 
-	logo{width: 10%;}
+	logo{
+	width: 10%;
+	}
 
-	#photo1,#photo2,#photo3,h4{display: none;}
+	#photo1,#photo2,#photo3,h4{
+	display: none;
+	}
 
 	nav{
-	font-size: 25%;}
+	font-size: 25%;
+	}
+	
+	h5{
+	font-size: 75%;
+	width: 100%;
+	margin: 10px auto;
+	}
+	
+	table{
+	width: 100%;
+	font-size: 75%;
+	}
+	
+	form{
+	width: 92%;
+	font-size: 75%;
+	float: none;
+	clear: left;
+	}
 }
  	
